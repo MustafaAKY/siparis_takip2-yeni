@@ -15,7 +15,7 @@ sifre = "Ma123456"
 
 supabase: Client = create_client(url, key)
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../templates")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
